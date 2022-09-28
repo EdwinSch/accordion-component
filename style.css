@@ -1,0 +1,77 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* MAIN CSS */
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #DFF6FF;
+}
+
+h1 {
+    margin-bottom: 40px;
+    color: #256D85;
+}
+
+main {
+    /* border: solid blue 2px; */
+    width: 800px;
+}
+
+.accordion-wrapper {
+    /* border: solid red 2px; */
+    padding: 30px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.accordion-header {
+    /* border: solid red 2px; */
+
+    /* padding-bottom: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2 {
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #256D85;
+    font-weight: 700;
+}
+
+button {
+    padding: 2px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    color: #47B5FF;
+}
+
+hr {
+    margin: 20px 0px;
+}
+
+.accordion-text {
+    color: #06283D;
+    font-size: 16px;
+    line-height: 24px;
+}
