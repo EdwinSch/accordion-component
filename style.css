@@ -14,23 +14,23 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: #DFF6FF;
 }
 
 h1 {
-    margin-bottom: 40px;
+    margin: 40px 0px;
     color: #256D85;
 }
 
 main {
-    /* border: solid blue 2px; */
-    width: 800px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .accordion-wrapper {
-    /* border: solid red 2px; */
     padding: 30px;
     width: 100%;
     background-color: white;
@@ -38,9 +38,6 @@ main {
 }
 
 .accordion-header {
-    /* border: solid red 2px; */
-
-    /* padding-bottom: 20px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -66,12 +63,31 @@ button:hover {
     color: #47B5FF;
 }
 
-hr {
-    margin: 20px 0px;
+.up {
+    display: none;
 }
 
 .accordion-text {
+    display: none;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: solid 1px black;
     color: #06283D;
     font-size: 16px;
     line-height: 24px;
+
+}
+
+/* Dynamic Classes */
+
+.show-text {
+    display: block;
+}
+
+.hide-chevron-down {
+    display: none;
+}
+
+.show-chevron-up {
+    display: block;
 }
